@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f9f5ff;
+  background: #fdf6ff;
   color: #4a0072;
   display: flex;
   flex-direction: column;
@@ -13,11 +13,28 @@ h1 {
   color: #6a1b9a;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(5, 250px);
-  gap: 10px;
-  max-width: 1300px;
+.malla-grid {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  overflow-x: auto;
+}
+
+.semestre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.semestre h2 {
+  text-align: center;
+  font-size: 16px;
+  color: #6a1b9a;
+  margin-bottom: 10px;
+  background: #e1bee7;
+  padding: 5px 10px;
+  border-radius: 6px;
+  width: 200px;
 }
 
 .ramo {
@@ -26,8 +43,11 @@ h1 {
   background-color: #e1bee7;
   border-radius: 10px;
   cursor: pointer;
-  transition: all 0.3s ease;
   user-select: none;
+  transition: all 0.3s ease;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .ramo:hover {
